@@ -5,12 +5,12 @@ const Results = () => {
     //div for Results section
     <div className='h-max w-full max-w-[1280px] text-[#f5f5f5] mt-40 mx-auto'>
         {/* Title design for Results section */}
-        <div id='unforgettable' className='w-max mx-auto mt-2'>
-            <h1 className='md:w-[800px] sm:w-[650px] w-[500px] mx-auto md:text-7xl sm:text-6xl text-5xl text-center uppercase font-extrabold border border-[#07DDDA] rounded-[50%]'>Unforgettable</h1>
+        <div id='unforgettable' className='w-full mx-auto mt-2'>
+            <h1 className='w-max mx-auto md:text-7xl sm:text-6xl text-4xl text-center uppercase font-extrabold border border-[#07DDDA] rounded-[50%] px-5'>Unforgettable</h1>
         </div>
-        <h1 className='mx-auto w-max md:text-7xl sm:text-6xl text-5xl text-center uppercase font-extrabold'>Results</h1>
+        <h1 className='mx-auto w-max md:text-7xl sm:text-6xl text-4xl text-center uppercase font-extrabold'>Results</h1>
         {/* Results section content, mobile responsive */}
-        <div className='h-max w-[90%] mx-auto flex flex-row justify-between mt-20'>
+        <div className='h-max md:w-[90%] w-[85%] mx-auto flex flex-row justify-between mt-20'>
             <div className='flex flex-col h-full md:w-[50%] w-full md:mx-10 mx-auto md:pl-10 md:pr-20'>
                 <div className='flex flex-col h-max md:w-full w-[70%] my-4'>
                     <h1 className='h-max w-full md:text-7xl sm:text-6xl text-4xl text-[#07DDDA] font-extrabold md:mt-8 sm:mt-6 mt-4'>400%</h1>

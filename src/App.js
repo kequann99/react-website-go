@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Mission from "./components/Mission";
 import WhatWeDo from "./components/WhatWeDo";
@@ -13,7 +12,6 @@ function App() {
   return (
     // Each section of the page is seperated into a component for easier changes to each section later on
     <div>
-      <Navbar />
       <Hero />
       <Mission />
       <WhatWeDo />

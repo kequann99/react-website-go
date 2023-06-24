@@ -42,12 +42,12 @@ const ClientLogos = () => {
     <div className='h-max w-full max-w-[1280px] text-[#f5f5f5] mt-40 mx-auto'>
       {/* Title design for Client Logos section */}
       <div className='flex h-max w-max mx-auto'>
-          <div id='super' className='w-max mx-auto mt-2'>
-              <h1 className='w-max mx-auto p-4 md:text-7xl sm:text-6xl text-5xl text-center uppercase font-extrabold border border-[#9747FF] rounded-[50%]'>Super</h1>
+          <div id='super' className='w-max mt-2'>
+              <h1 className='w-max md:px-4 px-2 py-4 md:text-7xl sm:text-6xl text-4xl text-center uppercase font-extrabold border border-[#9747FF] rounded-[50%]'>Super</h1>
           </div>
-          <h1 className='mx-auto mt-2 py-4 w-max md:text-7xl sm:text-6xl text-5xl text-center uppercase font-extrabold'>Proud To</h1>
+          <h1 className='mx-auto mt-2 py-4 w-max md:text-7xl sm:text-6xl text-4xl text-center uppercase font-extrabold'>Proud To</h1>
       </div>
-      <h1 className='mx-auto w-max md:text-7xl sm:text-6xl text-5xl text-center uppercase font-extrabold'>Work With</h1>
+      <h1 className='mx-auto w-max md:text-7xl sm:text-6xl text-4xl text-center uppercase font-extrabold'>Work With</h1>
       {/* Client Logos animated section, animations in CSS file */}
       <div className='h-full w-full my-10 relative overflow-hidden'>
         <div id='left-shadow' className='h-full w-[30%] absolute left-0 z-10'></div>

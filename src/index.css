@@ -11,6 +11,37 @@ body{
 }
 /* CSS section for whole website END */
 
+/* CSS section for Hero Section */
+@keyframes move-up-splash {
+  0% { transform: translateY(0); }
+	100% { transform: translateY(calc(-100%)); display: none; }
+}
+
+@keyframes move-up-hero {
+  0% { transform: translateY(40%); opacity: 30%; }
+	100% { transform: translateY(0); opacity: 100%; }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  60% { opacity: 0; }
+	100% { opacity: 100%;}
+}
+
+
+.nav-bar {
+  animation: fade-in 6s linear 1 forwards; 
+}
+
+.splashscreen{
+  animation: move-up-splash 2s linear 1 forwards; 
+}
+
+.hero-anim{
+  animation: move-up-hero 2s linear forwards; 
+}
+/* CSS section for Hero Section END */
+
 /* CSS section for Mission component */
 #design{
   border: 10px solid #33fff3;
@@ -47,6 +78,7 @@ body{
   background-clip: text;
 }
 /* CSS section for Results component END */
+
 
 /* CSS section for Client Logo component */
 #super{
