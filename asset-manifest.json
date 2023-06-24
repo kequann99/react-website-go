@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-website-go/static/css/main.31af1cde.css",
-    "main.js": "/react-website-go/static/js/main.b218046a.js",
+    "main.css": "/react-website-go/static/css/main.ada1e629.css",
+    "main.js": "/react-website-go/static/js/main.fd4cf11f.js",
     "static/media/mockup.png": "/react-website-go/static/media/mockup.6ed32114ed2d4d19f7aa.png",
     "static/media/clients_bg.png": "/react-website-go/static/media/clients_bg.3c438b5b2eca14146cba.png",
     "static/media/mission_bg_left.png": "/react-website-go/static/media/mission_bg_left.0327697bf4aa979403a3.png",
@@ -12,11 +12,11 @@
     "static/media/footer_bg.png": "/react-website-go/static/media/footer_bg.2b1859b065cb8cbba993.png",
     "static/media/splashscreen_mobile.png": "/react-website-go/static/media/splashscreen_mobile.a9fd767d45a7bfac2d8d.png",
     "index.html": "/react-website-go/index.html",
-    "main.31af1cde.css.map": "/react-website-go/static/css/main.31af1cde.css.map",
-    "main.b218046a.js.map": "/react-website-go/static/js/main.b218046a.js.map"
+    "main.ada1e629.css.map": "/react-website-go/static/css/main.ada1e629.css.map",
+    "main.fd4cf11f.js.map": "/react-website-go/static/js/main.fd4cf11f.js.map"
   },
   "entrypoints": [
-    "static/css/main.31af1cde.css",
-    "static/js/main.b218046a.js"
+    "static/css/main.ada1e629.css",
+    "static/js/main.fd4cf11f.js"
   ]
 }
