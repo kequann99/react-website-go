@@ -21,8 +21,8 @@ const Hero = () => {
       <div className={!splash ? 'relative h-screen w-full mx-auto' : 'relative h-screen w-full mx-auto hero-anim'}>
           <Navbar />
           {/* background image for Hero section */}
-          <img src={HeroBg} alt="background" className='top-[-10%] h-full w-full object-cover absolute z-[-1] md:block hidden'/>
-          <img src={HeroBg_Mobile} alt="background" className='top-[-10%] h-full w-full object-cover absolute z-[-1] md:hidden'/>
+          <img src={HeroBg} alt="background" className='top-[-2%] h-full w-full object-cover absolute z-[-1] md:block hidden'/>
+          <img src={HeroBg_Mobile} alt="background" className='top-[-5%] h-full w-full object-cover absolute z-[-1] md:hidden'/>
           {/*  Hero section title, mobile responsive */}
           <div className='max-w-[1280px] mt-5 mx-auto h-screen w-[90%] text-[#f5f5f5] tracking-tighter uppercase flex flex-col'>
             <h1 className='pt-40 pb-4 pr-10 md:text-8xl sm:text-6xl text-5xl font-extrabold'>Your New-Breed,</h1>
