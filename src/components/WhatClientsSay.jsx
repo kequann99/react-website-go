@@ -2,24 +2,24 @@ import React, { useState } from 'react'
 import ClientsBg from '../assets/clients_bg.png'
 
 const WhatClientsSay = () => {
-    const [toggle, setToggle] = useState(1);
+    const [toggle, setToggle] = useState(3)
 
-    function updateToggle(id) {
-        setToggle(id);
+    function updateToggle(id){
+        setToggle(id)
     }
 
   return (
     //div for Client Testimonial section
-    <div className='h-max w-full max-w-[1280px] text-[#f5f5f5] mx-auto my-40'>
+    <div className='relative h-max w-full max-w-[1280px] text-[#f5f5f5] mx-auto my-40'>
         {/* background image for Testimonial section */}
-        <img src={ClientsBg} alt="background design right" className='absolute right-0' />
+        <img src={ClientsBg} alt="background design right" className='absolute right-0 pointer-events-none' />
         <h1 className='mx-auto p-4 md:text-6xl sm:text-5xl text-4xl uppercase text-center font-extrabold my-20'>What Clients Say</h1>
         {/* Testimonial section navbar */}
         <div className='flex w-max h-max border-[1.5px] border-[#2B2B2B] rounded-[30px] mx-auto my-20'>
-            <button className={toggle === 1 ? 'h-full w-max m-1 px-4 py-2 text-black font-bold bg-[#07DDDA] rounded-[30px]' : 'h-full w-max m-1 px-4 py-2'} onClick={() => updateToggle(1)}>Telco</button>
-            <button className={toggle === 2 ? 'h-full w-max m-1 px-4 py-2 text-black font-bold bg-[#07DDDA] rounded-[30px]' : 'h-full w-max m-1 px-4 py-2'} onClick={() => updateToggle(2)}>Insurance</button>
-            <button className={toggle === 3 ? 'h-full w-max m-1 px-4 py-2 text-black font-bold bg-[#07DDDA] rounded-[30px]' : 'h-full w-max m-1 px-4 py-2'} onClick={() => updateToggle(3)}>Fintech</button>
-            <button className={toggle === 4 ? 'h-full w-max m-1 px-4 py-2 text-black font-bold bg-[#07DDDA] rounded-[30px]' : 'h-full w-max m-1 px-4 py-2'} onClick={() => updateToggle(4)}>IT</button>
+            <button className={toggle === 1 ? 'h-full w-max m-1 px-4 py-2 text-black font-bold bg-[#07DDDA] rounded-[30px] cursor-pointer' : 'h-full w-max m-1 px-4 py-2 cursor-pointer'} onClick={() => updateToggle(1)}>Telco</button>
+            <button className={toggle === 2 ? 'h-full w-max m-1 px-4 py-2 text-black font-bold bg-[#07DDDA] rounded-[30px] cursor-pointer' : 'h-full w-max m-1 px-4 py-2 cursor-pointer'} onClick={() => updateToggle(2)}>Insurance</button>
+            <button className={toggle === 3 ? 'h-full w-max m-1 px-4 py-2 text-black font-bold bg-[#07DDDA] rounded-[30px] cursor-pointer' : 'h-full w-max m-1 px-4 py-2 cursor-pointer'} onClick={() => updateToggle(3)}>Fintech</button>
+            <button className={toggle === 4 ? 'h-full w-max m-1 px-4 py-2 text-black font-bold bg-[#07DDDA] rounded-[30px] cursor-pointer' : 'h-full w-max m-1 px-4 py-2 cursor-pointer'} onClick={() => updateToggle(4)}>IT</button>
         </div>
         {/* Testimonial section content */}
         <div className={toggle === 1 ? 'flex w-full h-max mx-auto my-20 md:px-28 px-10' : 'hidden w-full h-max mx-auto my-20 md:px-28 px-10'}>
