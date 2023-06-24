@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import HeroBg from '../assets/bg_desktop.png'
 import HeroBg_Mobile from '../assets/bg_mobile.png'
 import Splashscreen from '../assets/splashscreen.png'
@@ -9,15 +9,18 @@ const Hero = () => {
 
   const [splash, setSplash] = useState(false)
   
-  const handleSplash = () => {
-    setSplash(!splash)
-  }
+  useEffect(() => {
+    setSplash(false)
+    setTimeout(() => {
+      setSplash(true)
+    }, 2000)
+  }, [])
 
   return (
     // div for Hero section
     <div className='h-screen w-full'>
-      <img src={Splashscreen} alt="Splashscreen" className={!splash ? 'top-0 h-full w-full object-fit z-50 absolute md:block hidden': 'top-0 h-full w-full object-fit z-50 absolute md:block hidden splashscreen'} onClick={handleSplash}/>
-      <img src={Splashscreen_Mobile} alt="Splashscreen" className={!splash ? 'top-0 h-full w-full object-fit z-50 absolute md:hidden' : 'top-0 h-full w-full object-fit z-50 absolute md:hidden splashscreen'} onClick={handleSplash}/>
+      <img src={Splashscreen} alt="Splashscreen" className={!splash ? 'top-0 h-full w-full object-fit z-50 absolute md:block hidden': 'top-0 h-full w-full object-fit z-50 absolute md:block hidden splashscreen'}/>
+      <img src={Splashscreen_Mobile} alt="Splashscreen" className={!splash ? 'top-0 h-full w-full object-fit z-50 absolute md:hidden' : 'top-0 h-full w-full object-fit z-50 absolute md:hidden splashscreen'}/>
       <div className={!splash ? 'relative h-screen w-full mx-auto' : 'relative h-screen w-full mx-auto hero-anim'}>
           <Navbar />
           {/* background image for Hero section */}

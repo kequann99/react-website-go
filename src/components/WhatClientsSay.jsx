@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ClientsBg from '../assets/clients_bg.png'
 
 const WhatClientsSay = () => {
-    const [toggle, setToggle] = useState(3)
+    const [toggle, setToggle] = useState(1)
 
     function updateToggle(id){
         setToggle(id)
